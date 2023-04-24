@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--title for naming the webpage, comes up on the browser tab-->
+        <title>Reservation Page</title>
+        <!--encoding specified for the webpage-->
+        <meta charset="UTF-8">
+        <!--adjusting the webpage for various devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css file for adding icons-->
+        <script src="https://kit.fontawesome.com/c478aabfb3.js" crossorigin="anonymous"></script>
+        <!--css file for adding google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@600&display=swap" rel="stylesheet">
+        <!--internal stylesheet-->
+        <style>
+            body {
+                background-color: #e7e393;
+                font-family: 'Ysabeau', sans-serif;
+            }
+
+            .banner {
+                box-sizing: border-box;
+                text-shadow: 1px 7px 5px white;
+                width: 100%;
+                height: 80px;
+                text-align: center;
+                margin-bottom: 20px;
+                background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-chinese-style-restaurant-simple-atmosphere-light-gray-banner-picture-image_1085055.jpg");
+            }
+
+            .form {
+                padding: 50px;
+                border: 1px solid #04030f;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <h1>Reservation Form</h1>
+        </div>
+        <div class="form">
+            <div class="name">
+                <i class="fa-solid fa-user" style="padding:0 10px 10px 0;"></i>
+                <label for="fname" style="width:100%; padding-bottom:10px;">Full Name</label><br>
+                <input type="text" id="fname" name="fullname" placeholder="Enter your full name" style="width:50%;">
+            </div>
+            <div class="contact">
+                <br><p><em>Contact Information</em></p>
+                <i class="fa-solid fa-phone" style="padding:0 10px 10px 0;"></i>
+                <label for="phone" style="padding-bottom:10px;">Phone No.</label>
+                <input type="number" id="phone" name="phonenumber" placeholder="Enter your phone number" style="margin-bottom:10px;"><br>
+                <i class="fa-solid fa-envelope" style="padding:0 10px 10px 0;"></i>
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="emailid" placeholder="Enter your email ID">
+            </div>
+            <div class="datetime" style="margin-top:20px;">
+                <label for="datetime" style="margin:0 10px 10px 0;">Select the date and time</label>
+                <input type="datetime-local" id="datetime" name="dateandtime" style="margin-bottom:10px;">
+            </div>
+            <div class="guests">
+                <label for="guests" style="margin-right:10px;">Party members</label>
+                <input type="number" id="guests" name="guests" placeholder="No.of guests">
+            </div>
+            <input type="submit" id="submit" style="margin-top:20px;">
+        </div>
+        <p style="margin-top:20px;">Thank you for submitting the form, we shall get back to you as soon as possible on the availability of seats at your given time.
+        Have a nice day!</p>
+    </body>
+</html>
